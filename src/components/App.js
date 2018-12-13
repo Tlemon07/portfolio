@@ -13,9 +13,9 @@ class App extends Component {
       <GlobalStyle />
       <NavigationBar />
       <Switch>
-        <Route exact path='/' component={Home} />
-        <Route path='/aboutMe' component={AboutMe} />
-        <Route path='/projects' component={Project} />
+        <Route exact path='/portfolio' component={Home} />
+        <Route path='/portfolio/aboutMe' component={AboutMe} />
+        <Route path='/portfolio/projects' component={Project} />
       </Switch>
       </div>
     );
