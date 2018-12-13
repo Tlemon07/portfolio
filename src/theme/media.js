@@ -7,29 +7,29 @@ const sizes = {
     giant: 1170
 };
 
-const media = Object.keys[sizes].reduce[(finalMedial, size) => {
-    return {
-        ...finalMedial,
-        [size]: function phone(...args){
-            return css`
-            @media(max-width: ${sizes[size]}px){
-                ${css(...args)}
-            }
-        `;            
-        }
-    }
-}, {}];
-
-// function phone(...args){
-//     return css`
-//         @media(max-width: ${sizes.phone}px){
-//             ${css(...args)}
+// const media = Object.keys[sizes].reduce[(finalMedial, size) => {
+//     return {
+//         ...finalMedial,
+//         [size]: function phone(...args){
+//             return css`
+//             @media(max-width: ${sizes[size]}px){
+//                 ${css(...args)}
+//             }
+//         `;            
 //         }
-//     `;
-// };
+//     };
+// }, {}];
 
-// const media = {
-//     phone
-// };
+function phone(...args){
+    return css`
+        @media(max-width: ${sizes.phone}px){
+            ${css(...args)}
+        }
+    `;
+};
+
+const media = {
+    phone
+};
 
 export default media;
