@@ -39,9 +39,9 @@ class NavigationBar extends Component {
   render() {
     return (
       <NavigationContainer>
-          <NewItem to={'/'}>Home</NewItem>
-          <NewItem to={'/aboutMe'}>About Me</NewItem>
-          <NewItem to={'/projects'}>Projects</NewItem>
+          <NewItem to={'/portfolio'}>Home</NewItem>
+          <NewItem to={'/portfolio/aboutMe'}>About Me</NewItem>
+          <NewItem to={'/portfolio/projects'}>Projects</NewItem>
       </NavigationContainer>
     );
   }
